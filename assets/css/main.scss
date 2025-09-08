@@ -1,6 +1,8 @@
 ---
 ---
 
+@import "{{ site.theme }}";
+
 /* 
  * Cursor Color Theme Override for Chirpy Jekyll Theme
  * Safely overrides default colors without breaking functionality
@@ -25,9 +27,19 @@
   --cursor-button-hover: #333333; /* Buttons (Hover) - Slightly lighter gray */
 }
 
-/* Main background override */
-body {
+/* Main background override - force pure black everywhere */
+body,
+html,
+.layout,
+#main-wrapper,
+.container,
+.row {
   background-color: var(--cursor-bg) !important;
+}
+
+/* Override any potential theme backgrounds */
+* {
+  background-color: inherit;
 }
 
 /* Content and card backgrounds */
@@ -36,9 +48,31 @@ body {
 .post-content,
 .card-body,
 .tab-content,
+.tab-pane,
+.page-content,
+.post,
+.home,
+.categories,
+.tags,
+.archives,
+.about,
 .site-title,
 .site-subtitle {
   background-color: var(--cursor-card) !important;
+}
+
+/* Tab-specific styling */
+.nav-tabs .nav-link {
+  background-color: var(--cursor-button) !important;
+  border-color: var(--cursor-border) !important;
+  color: var(--cursor-text-secondary) !important;
+}
+
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-link:hover {
+  background-color: var(--cursor-card) !important;
+  border-color: var(--cursor-border) !important;
+  color: var(--cursor-text-primary) !important;
 }
 
 /* Sidebar styling - ensure visibility and proper background */
