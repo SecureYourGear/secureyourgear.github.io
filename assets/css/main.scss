@@ -41,9 +41,31 @@ body {
   background-color: var(--cursor-card) !important;
 }
 
-/* Sidebar background */
+/* Sidebar styling - ensure visibility and proper background */
 #sidebar {
   background-color: var(--cursor-bg) !important;
+  display: block !important;
+  visibility: visible !important;
+}
+
+/* Sidebar content styling */
+#sidebar .site-title,
+#sidebar .site-subtitle,
+#sidebar .sidebar-bottom,
+#sidebar .nav-item,
+#sidebar .nav-link {
+  color: var(--cursor-text-primary) !important;
+}
+
+/* Avatar styling */
+#sidebar .site-avatar img {
+  border: 2px solid var(--cursor-border) !important;
+}
+
+/* Sidebar navigation links */
+#sidebar .nav-link:hover {
+  color: var(--cursor-link) !important;
+  background-color: var(--cursor-button) !important;
 }
 
 /* Navigation and header elements */
