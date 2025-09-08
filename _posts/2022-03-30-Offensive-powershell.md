@@ -1,6 +1,6 @@
 ---
 title : "Active Directory - Offensive PowerShell"
-author: Bhaskar Pal
+author: SecureYourGear Team
 date: 2022-03-30 11:51:00 +0800
 categories: [Red-Teaming, Active-Directory-Offensive-PowerShell]
 tags: [active-directory,active-directory-enumeration,offensive-powershell,powershell,amsi-bypass,real-time-monitoring-bypass,bloodhound,trusts-enumeration,GPO-enumeration,ACL-enumeration]
@@ -12,7 +12,7 @@ tags: [active-directory,active-directory-enumeration,offensive-powershell,powers
 
 Welcome to my second article in the Red Teaming Series (Offensive PowerShell). I hope everyone has gone through the first article of this series which explains the basic foundations and concepts required to understand  Active Directory.
 
-If not so, you can give it a read from [here](https://0xstarlight.github.io/posts/Active-Directory-Introduction/).
+If not so, you can give it a read from [here](https://www.secureyourgear.com/posts/Active-Directory-Introduction/).
 
 This guide aims to explain the complete basics to advance enumeration code snippets in Offensive PowerShell and those terms that every pentester/red-teamer should control to understand the attacks performed in an Active Directory network. You may refer to this as a Cheat-Sheet also.
 
@@ -636,8 +636,8 @@ Invoke-BloodHound -CollectionMethod All -ExcludeDC
 
 ### Start neo4j and BloodHound UI on kali machine and load the zip/json files
 ```bash
-0xStarlight@kali$ sudo neo4j console
-0xStarlight@kali$ bloodhound
+secureyourgear@kali$ sudo neo4j console
+secureyourgear@kali$ bloodhound
 ```
 
 # References
@@ -646,4 +646,6 @@ Invoke-BloodHound -CollectionMethod All -ExcludeDC
 
 If you find my articles interesting, you can buy me a coffee 
 
-<a href="https://www.buymeacoffee.com/0xStarlight"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me an OSCP?&emoji=&slug=0xStarlight&button_colour=b86e19&font_colour=ffffff&font_family=Poppins&outline_colour=ffffff&coffee_colour=FFDD00" /></a>
+---
+
+**Support SecureYourGear**: Learn more [PowerShell techniques](https://www.secureyourgear.com/categories/red-teaming/) and [advanced AD exploitation](https://www.secureyourgear.com/categories/hackthebox/).

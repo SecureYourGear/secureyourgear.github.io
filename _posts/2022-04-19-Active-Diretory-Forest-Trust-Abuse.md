@@ -1,6 +1,6 @@
 ---
 title : "Active Directory - Forest Trust Abuse"
-author: Bhaskar Pal
+author: SecureYourGear Team
 date: 2022-04-19 03:18:00 +0010
 categories: [Red-Teaming, Active-Directory-Forest-Trust-Abuse]
 tags: [inter-forest-TGT,ticket-abuse]
@@ -13,7 +13,7 @@ tags: [inter-forest-TGT,ticket-abuse]
 
 Welcome to my seventh article in the Red Teaming Series (Active Directory Forest Trust Abuse). I hope everyone has gone through the previous articles of this series which go through the basic concepts required up to  Domain Privilege Escalation.
 
-If not so, you can give it a read from [here](https://0xstarlight.github.io/categories/red-teaming/).
+If not so, you can give it a read from [here](https://www.secureyourgear.com/categories/red-teaming/).
 
 This guide explains Active-Directory Forest Trust Abuse mainly by forging an inter-forest TGT. I will also explain those terms that every pentester/red-teamer should control to understand the attacks performed in an Active Directory network. You may refer to this as a Cheat-Sheet also.
 
@@ -183,4 +183,6 @@ schtasks /Run /S <target-domain-user-dc> /TN "pwned"
 
 If you find my articles interesting, you can buy me a coffee 
 
-<a href="https://www.buymeacoffee.com/0xStarlight"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me an OSCP?&emoji=&slug=0xStarlight&button_colour=b86e19&font_colour=ffffff&font_family=Poppins&outline_colour=ffffff&coffee_colour=FFDD00" /></a>
+---
+
+**Support SecureYourGear**: Master [forest trust attacks](https://www.secureyourgear.com/categories/red-teaming/) and explore our [advanced AD techniques](https://www.secureyourgear.com/categories/hackthebox/).

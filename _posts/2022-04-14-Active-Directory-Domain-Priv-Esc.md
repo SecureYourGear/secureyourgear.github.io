@@ -1,6 +1,6 @@
 ---
 title : "Active Directory - Domain Privilege Escalation"
-author: Bhaskar Pal
+author: SecureYourGear Team
 date: 2022-04-14 01:50:00 +0010
 categories: [Red-Teaming, Active-Directory-Domain-Privilege-Escalation]
 tags: [kerberost,domain-privilege-escalation,AS-REP,Set-SPN,unconstrained-delegation,constrained-delegation,delegation-abuse,dns-admin]
@@ -13,7 +13,7 @@ tags: [kerberost,domain-privilege-escalation,AS-REP,Set-SPN,unconstrained-delega
 
 Welcome to my sixth article in the Red Teaming Series (Active Directory Domain Privilege Escalation). I hope everyone has gone through the previous articles of this series which go through the basic concepts required, high-level Domain enumeration explanation, AD/Windows Local Privilege escalation guide, AD Lateral Movement and Domain Persistence.
 
-If not so, you can give it a read from [here](https://0xstarlight.github.io/categories/red-teaming/).
+If not so, you can give it a read from [here](https://www.secureyourgear.com/categories/red-teaming/).
 
 This guide explains Active-Directory Domain Privilege Escalation mainly by Kerberos, AS-REPs, Set-SPN, and Kerberos Delegation. I will also explain those terms that every pentester/red-teamer should control to understand the attacks performed in an Active Directory network. You may refer to this as a Cheat-Sheet also.
 
@@ -512,4 +512,6 @@ We can edit the source code of **kdns.c** from *mikikatz* source code and add ou
 
 If you find my articles interesting, you can buy me a coffee 
 
-<a href="https://www.buymeacoffee.com/0xStarlight"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me an OSCP?&emoji=&slug=0xStarlight&button_colour=b86e19&font_colour=ffffff&font_family=Poppins&outline_colour=ffffff&coffee_colour=FFDD00" /></a>
+---
+
+**Support SecureYourGear**: If you found this helpful, check out our other [Active Directory attack techniques](https://www.secureyourgear.com/categories/red-teaming/) and [Windows exploitation guides](https://www.secureyourgear.com/categories/hackthebox/).
