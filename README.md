@@ -45,3 +45,4 @@ This work is published under [MIT][mit] License.
 [CD]: https://en.wikipedia.org/wiki/Continuous_deployment
 [mit]: https://github.com/cotes2020/chirpy-starter/blob/master/LICENSE
 # Trigger deployment
+# Trigger GitHub Pages deployment
