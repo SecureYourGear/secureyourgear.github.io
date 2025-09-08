@@ -1,0 +1,147 @@
+---
+# Main CSS file for Cursor theme override
+---
+
+/* 
+ * Cursor Color Theme Override for Chirpy Jekyll Theme
+ * Safely overrides default colors without breaking functionality
+ */
+
+/* Root color variables override */
+:root {
+  /* Cursor Primary Colors */
+  --cursor-bg: #0d1117;           /* Main Background - Cursor's exact deep black */
+  --cursor-card: #161b22;         /* Card/Content Areas - slightly lighter for contrast */
+  --cursor-border: #30363d;       /* Borders - subtle borders */
+  
+  /* Cursor Text Colors */
+  --cursor-text-primary: #f0f6fc; /* Primary Text - bright white for readability */
+  --cursor-text-secondary: #8b949e; /* Secondary Text - muted gray */
+  --cursor-text-tertiary: #7d8590; /* Tertiary Text - darker gray */
+  
+  /* Cursor Interactive Elements */
+  --cursor-link: #58a6ff;         /* Links - GitHub blue */
+  --cursor-link-hover: #79c0ff;   /* Links (Hover) - lighter blue */
+  --cursor-button: #21262d;       /* Buttons - dark gray */
+  --cursor-button-hover: #30363d; /* Buttons (Hover) - lighter gray */
+}
+
+/* Main background override */
+body {
+  background-color: var(--cursor-bg) !important;
+}
+
+/* Content and card backgrounds */
+#main,
+.card,
+.post-content,
+.card-body,
+.tab-content,
+.site-title,
+.site-subtitle {
+  background-color: var(--cursor-card) !important;
+}
+
+/* Sidebar background */
+#sidebar {
+  background-color: var(--cursor-bg) !important;
+}
+
+/* Navigation and header elements */
+#topbar,
+.navbar,
+.post-meta {
+  background-color: var(--cursor-card) !important;
+}
+
+/* Text color overrides */
+body,
+.card-text,
+.post-content,
+p,
+li,
+h1, h2, h3, h4, h5, h6 {
+  color: var(--cursor-text-primary) !important;
+}
+
+/* Secondary text elements */
+.post-meta,
+.card-subtitle,
+small,
+.text-muted {
+  color: var(--cursor-text-secondary) !important;
+}
+
+/* Link colors */
+a {
+  color: var(--cursor-link) !important;
+}
+
+a:hover {
+  color: var(--cursor-link-hover) !important;
+}
+
+/* Button styling */
+.btn,
+button {
+  background-color: var(--cursor-button) !important;
+  border-color: var(--cursor-border) !important;
+  color: var(--cursor-text-primary) !important;
+}
+
+.btn:hover,
+button:hover {
+  background-color: var(--cursor-button-hover) !important;
+  border-color: var(--cursor-border) !important;
+}
+
+/* Border colors */
+.card,
+.border,
+hr {
+  border-color: var(--cursor-border) !important;
+}
+
+/* Form elements */
+input,
+textarea,
+select {
+  background-color: var(--cursor-card) !important;
+  border-color: var(--cursor-border) !important;
+  color: var(--cursor-text-primary) !important;
+}
+
+/* Code blocks - maintain readability */
+code,
+pre,
+.highlight {
+  background-color: var(--cursor-button) !important;
+  color: var(--cursor-text-primary) !important;
+}
+
+/* Ensure proper contrast for navigation */
+.nav-link {
+  color: var(--cursor-text-secondary) !important;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--cursor-link) !important;
+}
+
+/* Table styling */
+table {
+  background-color: var(--cursor-card) !important;
+}
+
+th,
+td {
+  border-color: var(--cursor-border) !important;
+  color: var(--cursor-text-primary) !important;
+}
+
+/* Search and modal backgrounds */
+.modal-content,
+.search-result {
+  background-color: var(--cursor-card) !important;
+}
