@@ -6,23 +6,23 @@
  * Safely overrides default colors without breaking functionality
  */
 
-/* Root color variables override */
+/* Root color variables override - PURE BLACK THEME */
 :root {
-  /* Cursor Primary Colors */
-  --cursor-bg: #0d1117;           /* Main Background - Cursor's exact deep black */
-  --cursor-card: #161b22;         /* Card/Content Areas - slightly lighter for contrast */
-  --cursor-border: #30363d;       /* Borders - subtle borders */
+  /* Pure Black Primary Colors */
+  --cursor-bg: #000000;           /* Main Background - Pure Black */
+  --cursor-card: #111111;         /* Card/Content Areas - Very dark gray for minimal contrast */
+  --cursor-border: #222222;       /* Borders - Dark gray borders */
   
-  /* Cursor Text Colors */
-  --cursor-text-primary: #f0f6fc; /* Primary Text - bright white for readability */
-  --cursor-text-secondary: #8b949e; /* Secondary Text - muted gray */
-  --cursor-text-tertiary: #7d8590; /* Tertiary Text - darker gray */
+  /* High Contrast Text Colors */
+  --cursor-text-primary: #ffffff; /* Primary Text - Pure white for maximum contrast */
+  --cursor-text-secondary: #cccccc; /* Secondary Text - Light gray */
+  --cursor-text-tertiary: #888888; /* Tertiary Text - Medium gray */
   
-  /* Cursor Interactive Elements */
-  --cursor-link: #58a6ff;         /* Links - GitHub blue */
-  --cursor-link-hover: #79c0ff;   /* Links (Hover) - lighter blue */
-  --cursor-button: #21262d;       /* Buttons - dark gray */
-  --cursor-button-hover: #30363d; /* Buttons (Hover) - lighter gray */
+  /* Bright Interactive Elements */
+  --cursor-link: #00aaff;         /* Links - Bright blue for visibility */
+  --cursor-link-hover: #33bbff;   /* Links (Hover) - Lighter bright blue */
+  --cursor-button: #1a1a1a;       /* Buttons - Very dark gray */
+  --cursor-button-hover: #333333; /* Buttons (Hover) - Slightly lighter gray */
 }
 
 /* Main background override */
