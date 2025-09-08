@@ -1,6 +1,6 @@
 ---
 title : "Hack The Box - Shibboleth"
-author: Bhaskar Pal
+author: SecureYourGear Team
 date: 2022-04-05 11:17:00 +0800
 categories: [Hackthebox, Hackthebox-Linux, Hackthebox-Medium]
 tags: [network,MariaDB,password-reuse,Internal,IPMI,CVE-Exploitation,CVE-2021-27928,Weak-Credentials]
@@ -251,8 +251,10 @@ password : bloooarskybluh
 
 ![image](https://user-images.githubusercontent.com/59029171/161686774-cd12e45c-5bc3-4bc2-8c3d-b253dd05752f.png)
 
-HTB Profile : [0xStarlight](https://app.hackthebox.com/profile/244565)
+HTB Profile : [SecureYourGear](https://app.hackthebox.com/profile/244565)
 
 If you find my articles interesting, you can buy me a coffee 
 
-<a href="https://www.buymeacoffee.com/0xStarlight"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me an OSCP?&emoji=&slug=0xStarlight&button_colour=b86e19&font_colour=ffffff&font_family=Poppins&outline_colour=ffffff&coffee_colour=FFDD00" /></a>
+---
+
+**Support SecureYourGear**: Master more [HackTheBox exploits](https://www.secureyourgear.com/categories/hackthebox/) and advanced [penetration testing techniques](https://www.secureyourgear.com/categories/red-teaming/).

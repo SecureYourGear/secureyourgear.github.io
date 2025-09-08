@@ -1,6 +1,6 @@
 ---
 title : "Active Directory - Local Privilege Escalation"
-author: Bhaskar Pal
+author: SecureYourGear Team
 date: 2022-04-01 09:26:00 +0800
 categories: [Red-Teaming, Active-Directory-Local-Privilege-Escalation]
 tags: [active-directory-local-privilege-escalation,windows-local-privilege-escalation]
@@ -12,7 +12,7 @@ tags: [active-directory-local-privilege-escalation,windows-local-privilege-escal
 
 Welcome to my third article in the Red Teaming Series (Active Directory Local Privilege Escalation). I hope everyone has gone through the first two articles of this series which go through the basic concepts required to understand Active Directory and high-level Domain enumeration explanation.
 
-If not so, you can give it a read from [here](https://0xstarlight.github.io/categories/red-teaming/).
+If not so, you can give it a read from [here](https://www.secureyourgear.com/categories/red-teaming/).
 
 This guide aims to explain Windows/Active-Directory Local Privilege escalation snippets mainly by abusing services, registries, tokens and groups etc., in detail. I will also explain those terms that every pentester/red-teamer should control to understand the attacks performed in an Active Directory network. You may refer to this as a Cheat-Sheet also.
 
@@ -830,4 +830,6 @@ C:\Scripts\LAPSexport.ps1
 
 If you find my articles interesting, you can buy me a coffee 
 
-<a href="https://www.buymeacoffee.com/0xStarlight"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me an OSCP?&emoji=&slug=0xStarlight&button_colour=b86e19&font_colour=ffffff&font_family=Poppins&outline_colour=ffffff&coffee_colour=FFDD00" /></a>
+---
+
+**Support SecureYourGear**: Master Windows exploitation with our [complete Active Directory series](https://www.secureyourgear.com/categories/red-teaming/) and [advanced red team techniques](https://www.secureyourgear.com/categories/hackthebox/).

@@ -4,27 +4,36 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-<h1 align="center">Hi 👋, I'm Bhaskar Pal, aka 0xStarlight</h1>
+<h1 align="center">Hi 👋, Welcome to SecureYourGear</h1>
 
+# About SecureYourGear
+- We're passionate cybersecurity enthusiasts dedicated to sharing knowledge and skills in offensive security
+- Currently focused on **Advanced Red Team Operations and OSCP/OSEP preparation**
+- Specializing in Active Directory attacks, Windows exploitation, and modern red team techniques
+- Contact us at **samir@secureyourgear.com**
 
-# Whoami
-- I'm a passionate cybersecurity enthusiast and programmer looking to render the best of my knowledge and skills
-- I’m currently learning **Offensive Security for OSCP**
-- I'm currently publishing blogs about Active Directory Attacking and Defending 
-- How to reach me **bhaskarpal347@gmail.com**
+# Team Achievements & Certifications
+- **eJPT (eLearnSecurity Junior Penetration Tester)** - 2021
+- **CRTE (Certified Red Team Expert)** - Advanced Active Directory attacks
+- **Google Hashcode 2022** - Ranked 4579 globally
+- **DEF CON 29 Red Team CTF** - Ranked 82/648 teams (2021)
+- **HackTheBox Cyber Apocalypse CTF** - Ranked 300/4740 teams (2021)
+- **NahamCon CTF** - Ranked 1020/6491 players (2021)
+- **TryHackMe Certifications**: Advent of Cyber, CompTIA Pentest+, Offensive Pentesting paths
+- **Active Directory Expertise**: Domain persistence, privilege escalation, lateral movement
+- **Windows Exploitation**: Local privilege escalation, defender bypass techniques
 
-# Achievements
-- I received my eLearnSecurity Junior Penetration Tester(eJPT) certification in 2021
-- Achieved the rank of 4579 at Google's 2022 Hashcode competition
-- Achieved the rank of 82/648 teams at DEF CON 29 Red Team 2021 CTF competition
-- Achieved the rank of 300/4740 teams at HackTheBox Cyber Apocalypse 2021 CTF competition 
-- Achieved the rank of 1020/6491 players at NahamCon 2021 CTF competition
-- Received the certificate of completion for Advent of Cyber 2021 by TryHackMe
-- Received the certificate of completion for CompTIA Pentest+ Learning path by TryHackMe
-- Received the certificate of completion Offensive Pentesting Learning path by TryHackMe
+# Community Profiles & Resources
 
-# Profiles
-
+## Platform Profiles
 <img src="https://tryhackme-badges.s3.amazonaws.com/biscuit.png" alt="TryHackMe">
 
 <img src="https://www.hackthebox.eu/badge/image/244565" alt="HackTheBox">
+
+## SecureYourGear Resources
+- **GitHub**: [SecureYourGear](https://github.com/SecureYourGear) - Scripts, tools, and cheat sheets
+- **Website**: [www.secureyourgear.com](https://www.secureyourgear.com) - Latest security research and tutorials
+- **Focus Areas**: Active Directory, Red Team Operations, Windows Exploitation, CTF Challenges
+
+## Support Our Work
+If you find our content helpful, consider supporting our research and development efforts!

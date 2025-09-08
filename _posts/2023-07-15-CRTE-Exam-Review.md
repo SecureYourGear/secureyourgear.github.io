@@ -1,6 +1,6 @@
 ---
 title : "CRTE Exam Review"
-author: Bhaskar Pal
+author: SecureYourGear Team
 date: 2023-07-15 07:23:00 +0530
 categories: [Red-Teaming-Exams,CRTE-Review]
 tags: [active-directory,CRTE-exam]
@@ -113,7 +113,7 @@ A solid grasp of the methodology and navigating an Active Directory environment 
 
 7. Take Breaks and Manage Stress: Remember to take regular breaks, eat well, and rest during the exam. Managing stress levels and maintaining a clear mindset will help enhance your focus and overall performance.
 
-Feel free to check out my cheat sheet for CRTE exam on my github [CRTE-NOTES](https://github.com/0xStarlight/CRTE-Notes/). This cheat sheet includes additional insights and strategies to help you prepare effectively for the exam.
+Feel free to check out our comprehensive CRTE cheat sheet on GitHub [CRTE-NOTES](https://github.com/SecureYourGear/CRTE-Notes/). This cheat sheet includes additional insights and strategies to help you prepare effectively for the exam.
 
 
 # <span style="color:lightblue">Conclusion</span>
@@ -129,4 +129,6 @@ After eagerly awaiting the results, I received the outcome via email after a wee
 
 If you find my articles interesting, you can buy me a coffee 
 
-<a href="https://www.buymeacoffee.com/0xStarlight"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me an OSEP?&emoji=&slug=0xStarlight&button_colour=b86e19&font_colour=ffffff&font_family=Poppins&outline_colour=ffffff&coffee_colour=FFDD00" /></a>
+---
+
+**Support SecureYourGear**: Prepare for advanced certifications with our [CRTE preparation guides](https://www.secureyourgear.com/categories/red-teaming/) and [expert-level techniques](https://www.secureyourgear.com/categories/hackthebox/).

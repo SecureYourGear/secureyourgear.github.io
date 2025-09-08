@@ -1,6 +1,6 @@
 ---
 title : "Bypassing Windows Defender"
-author: Bhaskar Pal
+author: SecureYourGear Team
 date: 2023-05-14 22:30:00 +0800
 categories: [Red-Teaming, Defender-bypass]
 tags: [active-directory,windows,amsi-bypass,etw-bypass]
@@ -304,7 +304,9 @@ Invoke-Obfuscation> ENCODING\5
 
 If you find my articles interesting, you can buy me a coffee 
 
-<a href="https://www.buymeacoffee.com/0xStarlight"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me an OSCP?&emoji=&slug=0xStarlight&button_colour=b86e19&font_colour=ffffff&font_family=Poppins&outline_colour=ffffff&coffee_colour=FFDD00" /></a>
+---
+
+**Support SecureYourGear**: Master [Windows Defender bypass techniques](https://www.secureyourgear.com/categories/red-teaming/) and explore our [complete evasion toolkit](https://www.secureyourgear.com/categories/hackthebox/).
 
 
 

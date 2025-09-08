@@ -1,6 +1,6 @@
 ---
 title : "Active Directory - Lateral Movement"
-author: Bhaskar Pal
+author: SecureYourGear Team
 date: 2022-04-08 08:05:00 +0010
 categories: [Red-Teaming, Active-Directory-Lateral-Movement]
 tags: [active-directory,amsi-bypass,active-directory-lateral-movement,mimikatz,MSSQL,remoting]
@@ -13,7 +13,7 @@ tags: [active-directory,amsi-bypass,active-directory-lateral-movement,mimikatz,M
 
 Welcome to my fourth article in the Red Teaming Series (Active Directory Lateral Movement). I hope everyone has gone through the previous articles of this series which go through the basic concepts required, high-level Domain enumeration explanation and AD/Windows Local Privilege escalation guide.
 
-If not so, you can give it a read from [here](https://0xstarlight.github.io/categories/red-teaming/).
+If not so, you can give it a read from [here](https://www.secureyourgear.com/categories/red-teaming/).
 
 This guide explains Active-Directory Lateral Movement snippets mainly by using PowerShell cmdlets, Inkove-Mimikats and abusing MS-SQL servers in detail. I will also explain those terms that every pentester/red-teamer should control to understand the attacks performed in an Active Directory network. You may refer to this as a Cheat-Sheet also.
 
@@ -351,4 +351,6 @@ Get-SQLQuery -Instance <instanceName> -Query "USE dbName;SELECT * FROM tableName
 
 If you find my articles interesting, you can buy me a coffee 
 
-<a href="https://www.buymeacoffee.com/0xStarlight"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me an OSCP?&emoji=&slug=0xStarlight&button_colour=b86e19&font_colour=ffffff&font_family=Poppins&outline_colour=ffffff&coffee_colour=FFDD00" /></a>
+---
+
+**Support SecureYourGear**: Continue learning with our [lateral movement techniques](https://www.secureyourgear.com/categories/red-teaming/) and [complete AD attack series](https://www.secureyourgear.com/categories/hackthebox/).

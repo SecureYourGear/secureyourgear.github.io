@@ -1,6 +1,6 @@
 ---
 title : "Hack The Box - Node"
-author: Bhaskar Pal
+author: SecureYourGear Team
 date: 2022-03-21 11:33:00 +0800
 categories: [Hackthebox, Hackthebox-Linux, Hackthebox-Medium]
 tags: [nmap,nodejs,crackstation,source-code,password-reuse,bof,command-injection,wildcard,reverse-engineering,binaryninja,OSCP]
@@ -416,8 +416,10 @@ A really good blog is written for this method of priv esc
 
 ![image](https://user-images.githubusercontent.com/59029171/139872271-6a94a1ef-8c16-4b60-9ce9-0405305b0257.png)
 
-HTB Profile : [0xStarlight](https://app.hackthebox.com/profile/244565)
+HTB Profile : [SecureYourGear](https://app.hackthebox.com/profile/244565)
 
 If you find my articles interesting, you can buy me a coffee 
 
-<a href="https://www.buymeacoffee.com/0xStarlight"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me an OSCP?&emoji=&slug=0xStarlight&button_colour=b86e19&font_colour=ffffff&font_family=Poppins&outline_colour=ffffff&coffee_colour=FFDD00" /></a>
+---
+
+**Support SecureYourGear**: Practice more [HackTheBox challenges](https://www.secureyourgear.com/categories/hackthebox/) and master our [complete penetration testing guide](https://www.secureyourgear.com/categories/red-teaming/).

@@ -1,6 +1,6 @@
 ---
 title : "Active Directory - Introduction"
-author: Bhaskar Pal
+author: SecureYourGear Team
 date: 2022-03-29 15:06:00 +0800
 categories: [Red-Teaming, Active-Directory-Introduction]
 tags: [active-directory,active-directory-introduction]
@@ -381,4 +381,6 @@ The Active Directory domain services are the main access point for attackers and
 
 If you find my articles interesting, you can buy me a coffee 
 
-<a href="https://www.buymeacoffee.com/0xStarlight"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me an OSCP?&emoji=&slug=0xStarlight&button_colour=b86e19&font_colour=ffffff&font_family=Poppins&outline_colour=ffffff&coffee_colour=FFDD00" /></a>
+---
+
+**Support SecureYourGear**: Continue your Active Directory journey with our [advanced attack techniques](https://www.secureyourgear.com/categories/red-teaming/) and [privilege escalation guides](https://www.secureyourgear.com/categories/hackthebox/).
