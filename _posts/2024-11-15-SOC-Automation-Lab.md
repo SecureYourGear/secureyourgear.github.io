@@ -954,6 +954,12 @@ A high-severity security event has been automatically detected and investigated.
 This alert was generated automatically by the SecureYourGear SOC Automation Platform.
 ```
 
+**What Happens on the Receiving End:**
+
+The SOC team receives this email within 60-90 seconds of detection. The analyst gets immediate context including threat severity, affected system, VirusTotal validation (typically 60+ detections), and clickable links to both the VirusTotal report and TheHive case. This eliminates manual pivoting between systems - the case is already created with observables attached and investigation tasks defined.
+
+Traditional manual workflow takes 35-60 minutes from alert to case creation. Automation reduces this to 90 seconds, enabling the team to focus on investigation and response rather than data gathering and ticket creation.
+
 ### Step 8: Log to SIEM (Optional)
 
 **Shuffle App**: HTTP Request
