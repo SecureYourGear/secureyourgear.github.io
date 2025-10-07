@@ -3,9 +3,33 @@
 
 @import "{{ site.theme }}";
 
+/* Site title (SecureYourGear) - Purple */
+.site-title a {
+  color: #a855f7 !important;
+}
+
+.site-title a:hover {
+  color: #c084fc !important;
+}
+
 /* Site subtitle customization */
 .site-subtitle {
   font-size: 1.5rem !important;
   font-style: normal !important;
   font-weight: 500 !important;
+}
+
+/* Post titles - Blue */
+.post-preview h1 a,
+.post-title,
+h1.post-title,
+.card-title a,
+#post-list .card-title a {
+  color: #00aaff !important;
+}
+
+.post-preview h1 a:hover,
+.card-title a:hover,
+#post-list .card-title a:hover {
+  color: #33bbff !important;
 }
