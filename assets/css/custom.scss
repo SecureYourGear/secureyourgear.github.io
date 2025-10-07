@@ -12,24 +12,25 @@
   color: #a855f7 !important;
 }
 
-/* Site subtitle customization */
+/* Site subtitle (Samir Anastasio) - 10% larger */
 .site-subtitle {
-  font-size: 1.5rem !important;
+  font-size: 1.0725rem !important;
   font-style: normal !important;
   font-weight: 500 !important;
 }
 
 /* Post titles - Blue */
-.post-preview h1 a,
+.post-preview .card-title,
+.post-preview h1.card-title,
+.card.post-preview a .card-title,
 .post-title,
 h1.post-title,
-.card-title a,
-#post-list .card-title a {
+.card-title,
+#post-list .card-title {
   color: #00aaff !important;
 }
 
-.post-preview h1 a:hover,
-.card-title a:hover,
-#post-list .card-title a:hover {
+.post-preview:hover .card-title,
+.card.post-preview a:hover .card-title {
   color: #33bbff !important;
 }
