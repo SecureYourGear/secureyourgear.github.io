@@ -1051,4 +1051,4 @@ MITRE: T1003
 
 ---
 
-This lab demonstrates real-world SOC automation techniques used by security teams to protect organizations from credential theft, lateral movement, and advanced persistent threats. The skills and architecture patterns you've implemented here are directly applicable to enterprise security operations.
+This lab demonstrates SOC automation techniques used by security teams to protect organizations from credential theft, lateral movement, and advanced persistent threats.
