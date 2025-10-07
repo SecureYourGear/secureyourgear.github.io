@@ -1,0 +1,94 @@
+/*
+ * Custom variable overrides for Chirpy theme
+ * This file overrides default Chirpy color variables
+ */
+
+/* Override dark mode colors with pure black theme and purple accents */
+@mixin dark-scheme {
+  /* Pure Black Backgrounds */
+  --main-bg: #000000;                    /* Main background - Pure black */
+  --mask-bg: #0d0d0d;                    /* Overlay background - Slightly lighter */
+  --main-border-color: #222222;          /* Border color - Dark gray */
+
+  /* Sidebar */
+  --sidebar-bg: radial-gradient(circle, #0d0d0d 0%, #000000 100%);
+  --sidebar-muted-color: #888888;
+  --sidebar-active-color: #ffffff;
+  --nav-cursor-color: #cccccc;
+  --sidebar-btn-bg: rgba(255, 255, 255, 0.1);
+
+  /* Text Colors - High Contrast */
+  --text-color: #ffffff;                 /* Primary text - Pure white */
+  --text-muted-color: #cccccc;           /* Secondary text - Light gray */
+  --heading-color: #ffffff;              /* Headings - Pure white */
+
+  /* Purple Link Colors */
+  --link-color: #a855f7;                 /* Links - Vibrant purple */
+  --link-underline-color: #7c3aed;       /* Link underline - Darker purple */
+  --toc-highlight: #a855f7;              /* Table of contents highlight */
+  --checkbox-checked-color: #a855f7;     /* Checked checkboxes */
+
+  /* Button and Interactive Elements */
+  --button-bg: #1a1a1a;                  /* Buttons - Very dark gray */
+  --btn-border-color: #333333;           /* Button borders */
+  --btn-backtotop-color: #ffffff;
+  --btn-backtotop-border-color: #333333;
+  --btn-box-shadow: #000000;
+
+  /* Cards and Content Areas */
+  --card-bg: #111111;                    /* Card background - Very dark gray */
+  --card-header-bg: #1a1a1a;             /* Card headers */
+  --card-hovor-bg: #222222;              /* Card hover state */
+  --card-border-color: #222222;          /* Card borders */
+  --card-box-shadow: #000000;
+
+  /* Topbar */
+  --topbar-text-color: #ffffff;
+  --topbar-wrapper-bg: #111111;
+  --search-wrapper-bg: #1a1a1a;
+  --search-wrapper-border-color: #222222;
+  --search-icon-color: #888888;
+  --input-focus-border-color: #a855f7;   /* Purple focus border */
+
+  /* Posts and Content */
+  --post-list-text-color: #ffffff;
+  --btn-patinator-text-color: #ffffff;
+  --btn-paginator-hover-color: #222222;
+  --btn-paginator-border-color: #333333;
+  --btn-text-color: #ffffff;
+  --pin-bg: #1a1a1a;
+  --pin-color: #ffffff;
+
+  /* Tags and Categories */
+  --tag-bg: #1a1a1a;
+  --tag-hover: #a855f7;                  /* Purple tag hover */
+  --tag-border: #333333;
+  --tag-shadow: #000000;
+  --search-tag-bg: #1a1a1a;
+  --categories-border: #222222;
+  --categories-hover-bg: #222222;
+  --categories-icon-hover-color: #a855f7;
+
+  /* Tables */
+  --tb-odd-bg: #0d0d0d;                  /* Odd table rows */
+  --tb-even-bg: #111111;                 /* Even table rows */
+  --tb-border-color: #222222;
+
+  /* Code Blocks */
+  --kbd-wrap-color: #333333;
+  --kbd-text-color: #ffffff;
+  --kbd-bg-color: #1a1a1a;
+
+  /* Misc */
+  --blockquote-border-color: #333333;
+  --blockquote-text-color: #888888;
+  --label-color: #888888;
+  --checkbox-color: #888888;
+  --dash-color: #333333;
+  --footnote-target-bg: #7c3aed;         /* Purple footnote highlight */
+
+  /* Archives Timeline */
+  --timeline-node-bg: #888888;
+  --timeline-color: #333333;
+  --timeline-year-dot-color: #333333;
+}
