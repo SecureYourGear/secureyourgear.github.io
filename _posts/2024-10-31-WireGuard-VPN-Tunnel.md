@@ -1,7 +1,7 @@
 ---
 title: "WireGuard: VPN Tunnel"
 author: SecureYourGear Team
-date: 2024-09-26 12:00:00 +0800
+date: 2024-10-31 12:00:00 +0800
 categories: [Networking, VPN]
 tags: [wireguard, vpn, privacy, security, networking, encryption]
 ---
@@ -326,12 +326,12 @@ sudo journalctl -u wg-quick@wg0 -f
 
 After successful setup, you'll achieve:
 
-- ✅ **Secure remote access** to your home/office network
-- ✅ **Enhanced privacy** when using public WiFi
-- ✅ **Encrypted internet** traffic
-- ✅ **Fast VPN connections** with minimal overhead
-- ✅ **Access to geo-restricted** content
-- ✅ **Protection** from ISP tracking
+- **Secure remote access** to your home/office network
+- **Enhanced privacy** when using public WiFi
+- **Encrypted internet** traffic
+- **Fast VPN connections** with minimal overhead
+- **Access to geo-restricted** content
+- **Protection** from ISP tracking
 
 ## Conclusion
 

@@ -15,9 +15,9 @@ timezone: America/New_York
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 title: SecureYourGear                          # the main title
-tagline: Cyber security, Red Teaming and CTF Writeup's  # it will display as the sub-title
+tagline: Samir Anastasio  # it will display as the sub-title
 description: >-                        # used by seo meta and the atom feed
-  Cyber security, Red Teaming and CTF Writeup's
+  Samir Anastasio
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: 'https://www.secureyourgear.com'
 github:
@@ -27,15 +27,15 @@ twitter:
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: SecureYourGear
+  name: Samir Anastasio
   email: samir@secureyourgear.com            # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/SecureYourGear      # change to your twitter homepage
+    - https://www.linkedin.com/in/samiranastasio/
     - https://github.com/SecureYourGear       # change to your github homepage
+    - https://twitter.com/SecureYourGear      # change to your twitter homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
-    # - https://www.linkedin.com/in/username
 google_site_verification:               # fill in to your verification string
 # ↑ --------------------------
 # The end of `jekyll-seo-tag` settings
