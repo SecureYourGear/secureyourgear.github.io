@@ -16,7 +16,9 @@ Haven't done levels 0-17 yet? Start with [Bandit CTF: Levels 0-17](/posts/Bandit
 
 ## Level 18 → Level 19
 
-**Goal**: The password is in `readme` but `.bashrc` logs you out when you log in with SSH.
+> **Level Goal**: The password for the next level is stored in a file `readme` in the homedirectory. Unfortunately, someone has modified `.bashrc` to log you out when you log in with SSH.
+
+**Recommended Commands**: `ssh`, `ls`, `cat`
 
 **Theory**: `.bashrc` runs when you start a bash shell. We can bypass it by running commands directly through SSH without starting an interactive shell.
 
@@ -45,7 +47,9 @@ By putting the command in quotes after the SSH command, it executes without star
 
 ## Level 19 → Level 20
 
-**Goal**: Use the setuid binary to access the next level's password.
+> **Level Goal**: To gain access to the next level, you should use the setuid binary in the homedirectory. Execute it without arguments to find out how to use it. The password for this level can be found in the usual place (`/etc/bandit_pass`), after you have used the setuid binary.
+
+**Recommended Commands**: `ls`, `cat`, `./binary`
 
 **Login**:
 ```bash
@@ -86,7 +90,9 @@ We just ran `cat` as bandit20, so we could read their password file!
 
 ## Level 20 → Level 21
 
-**Goal**: A setuid binary connects to localhost on a port you specify. It reads a line, verifies it's the current level's password, and sends the next password if correct.
+> **Level Goal**: There is a setuid binary in the homedirectory that does the following: it makes a connection to localhost on the port you specify as a commandline argument. It then reads a line of text from the connection and compares it to the password in the previous level (bandit20). If the password is correct, it will transmit the password for the next level (bandit21).
+
+**Recommended Commands**: `ssh`, `nc`, `cat`, `bash`, `screen`, `tmux`, `Unix 'job control' (bg, fg, jobs, &, CTRL-Z, ...)`
 
 **Login**:
 ```bash
@@ -122,7 +128,9 @@ The binary connected to our listener, verified the password, and sent the next o
 
 ## Level 21 → Level 22
 
-**Goal**: A program runs automatically from cron. Find what command is being executed in `/etc/cron.d/`.
+> **Level Goal**: A program is running automatically at regular intervals from cron, the time-based job scheduler. Look in `/etc/cron.d/` for the configuration and see what command is being executed.
+
+**Recommended Commands**: `cron`, `crontab`, `crontab(5)` (use "man 5 crontab" to access this)
 
 **Login**:
 ```bash
@@ -171,7 +179,9 @@ WdDozAdTM2z9DiFEQ2mGlwngMfj4EZff
 
 ## Level 22 → Level 23
 
-**Goal**: Similar to before, but the script creates a filename based on the username.
+> **Level Goal**: A program is running automatically at regular intervals from cron, the time-based job scheduler. Look in `/etc/cron.d/` for the configuration and see what command is being executed. Looking at shell scripts written by other people is a very useful skill. The script for this level is intentionally made easy to read. If you are having problems understanding what it does, try executing it to see the debug information it prints.
+
+**Recommended Commands**: `cron`, `crontab`, `crontab(5)` (use "man 5 crontab" to access this)
 
 **Login**:
 ```bash
@@ -216,7 +226,9 @@ QYw0Y2aiA672PsMmh9puTQuhoz8SyR2G
 
 ## Level 23 → Level 24
 
-**Goal**: Create your own script that the cron job will execute to get the password.
+> **Level Goal**: A program is running automatically at regular intervals from cron, the time-based job scheduler. Look in `/etc/cron.d/` for the configuration and see what command is being executed. This time you need to make your own script get executed by the cron job. You'll need to place the script in the appropriate directory and ensure it runs within the time limit.
+
+**Recommended Commands**: `cron`, `crontab`, `crontab(5)` (use "man 5 crontab" to access this)
 
 **Login**:
 ```bash
@@ -298,7 +310,9 @@ VAfGXJ1PBSsPSnvsjI8p759leLZ9GGar
 
 ## Level 24 → Level 25
 
-**Goal**: A daemon on port 30002 requires the password for bandit24 and a 4-digit PIN. Brute force all 10,000 combinations.
+> **Level Goal**: A daemon is listening on port 30002 and will give you the password for bandit25 if given the password for bandit24 and a secret numeric 4-digit pincode. There is no way to retrieve the pincode except by going through all of the 10000 combinations, called brute-forcing.
+
+**Recommended Commands**: (none for this level, you will need to create your own solution)
 
 **Login**:
 ```bash
@@ -346,7 +360,9 @@ Note: The actual password will be different when you run this - the server gener
 
 ## Level 25 → Level 26
 
-**Goal**: bandit26's shell isn't `/bin/bash`, making SSH tricky. Find a way in.
+> **Level Goal**: Logging in to bandit26 from bandit25 should be fairly easy... The shell for user bandit26 is not `/bin/bash`, but something else. Find out what it is, how it works and how to break out of it.
+
+**Recommended Commands**: `ssh`, `cat`, `more`, `vi`, `ls`, `id`, `pwd`
 
 **Login**:
 ```bash
@@ -408,7 +424,9 @@ c7GvcKlw9mC7aUQaPx7nwFstuAIBw1o1
 
 ## Level 26 → Level 27
 
-**Goal**: Use the setuid binary to get bandit27's password.
+> **Level Goal**: Good job getting a shell! Now hurry and grab the password for bandit27!
+
+**Recommended Commands**: `ls`
 
 **Login**: Use the shell from the previous level (you're already logged in as bandit26)
 
@@ -432,7 +450,9 @@ YnQpBuifNMas1hcUFk70ZmqkhUU2EuaS
 
 ## Level 27 → Level 28
 
-**Goal**: Clone a git repository and find the password.
+> **Level Goal**: There is a git repository at `ssh://bandit27-git@localhost/home/bandit27-git/repo` via the port 2220. The password for the user bandit27-git is the same as for the user bandit27.
+
+**Recommended Commands**: `git`
 
 **Login**:
 ```bash
@@ -478,7 +498,9 @@ The password to the next level is: AVanL161y9rsbcJIsFHuw35rjaOM19nR
 
 ## Level 28 → Level 29
 
-**Goal**: The password isn't in the current commit - check git history.
+> **Level Goal**: There is a git repository at `ssh://bandit28-git@localhost/home/bandit28-git/repo` via the port 2220. The password for the user bandit28-git is the same as for the user bandit28.
+
+**Recommended Commands**: `git`
 
 **Login**:
 ```bash
@@ -548,7 +570,9 @@ bandit28@bandit:/tmp/mygit28/repo$ git show f08b9cc63fa1a4602fb065257633c2dae6e5
 
 ## Level 29 → Level 30
 
-**Goal**: The password isn't in the master branch - check other branches.
+> **Level Goal**: There is a git repository at `ssh://bandit29-git@localhost/home/bandit29-git/repo` via the port 2220. The password for the user bandit29-git is the same as for the user bandit29.
+
+**Recommended Commands**: `git`
 
 **Login**:
 ```bash
@@ -612,7 +636,9 @@ Some notes for bandit30 of bandit.
 
 ## Level 30 → Level 31
 
-**Goal**: Find the password using git tags.
+> **Level Goal**: There is a git repository at `ssh://bandit30-git@localhost/home/bandit30-git/repo` via the port 2220. The password for the user bandit30-git is the same as for the user bandit30.
+
+**Recommended Commands**: `git`
 
 **Login**:
 ```bash
@@ -649,7 +675,9 @@ rmCBvG56y58BXzv98yZGdO7ATVL5dW8y
 
 ## Level 31 → Level 32
 
-**Goal**: Follow the README instructions to push a file.
+> **Level Goal**: There is a git repository at `ssh://bandit31-git@localhost/home/bandit31-git/repo` via the port 2220. The password for the user bandit31-git is the same as for the user bandit31.
+
+**Recommended Commands**: `git`
 
 **Login**:
 ```bash
@@ -718,7 +746,9 @@ remote: odHo63fHiFqcWWJG9rLiLDtPm45KzUKy
 
 ## Level 32 → Level 33
 
-**Goal**: Escape the uppercase shell!
+> **Level Goal**: After all this `git` stuff it's time for another escape. Good luck!
+
+**Recommended Commands**: `sh`, `man`
 
 **Login**:
 ```bash
@@ -783,26 +813,3 @@ c9c3199ddf4121b10cf581a98d51caee
 | `chmod` | Change permissions |
 | `$0` | Shell variable |
 
-## Skills Mastered
-
-✅ SSH command execution
-✅ SetUID binary exploitation
-✅ Network services (netcat)
-✅ Cron job analysis
-✅ Script creation and automation
-✅ Git version control
-✅ Shell escape techniques
-✅ Privilege escalation
-
-## What's Next?
-
-Continue your cybersecurity journey:
-
-1. **[OverTheWire Natas](https://overthewire.org/wargames/natas/)** - Web application security
-2. **[OverTheWire Leviathan](https://overthewire.org/wargames/leviathan/)** - Binary exploitation
-3. **[HackTheBox](https://www.hackthebox.eu/)** - Realistic penetration testing
-4. **[TryHackMe](https://tryhackme.com/)** - Guided security learning
-
----
-
-**Support SecureYourGear**: Explore more [CTF writeups](https://www.secureyourgear.com/categories/ctf/) and [security challenges](https://www.secureyourgear.com/tags/).

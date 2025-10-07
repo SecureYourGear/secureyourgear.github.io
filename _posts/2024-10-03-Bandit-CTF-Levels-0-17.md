@@ -18,7 +18,9 @@ This is a complete, step-by-step walkthrough of OverTheWire Bandit levels 0-17. 
 
 ## Level 0
 
-**Goal**: Log into the game using SSH.
+> **Level Goal**: Log into the game using SSH to the machine bandit.labs.overthewire.org on port 2220.
+
+**Recommended Commands**: `ssh`
 
 **Theory**: SSH (Secure Shell) is a protocol for securely accessing remote computers. The basic syntax is `ssh username@host -p port`.
 
@@ -34,7 +36,9 @@ You're now logged into Level 0!
 
 ## Level 0 → Level 1
 
-**Goal**: The password for the next level is stored in a file called `readme` in the home directory.
+> **Level Goal**: The password for the next level is stored in a file called `readme` located in the home directory.
+
+**Recommended Commands**: `ls`, `cd`, `cat`, `file`, `du`, `find`
 
 **Login**:
 ```bash
@@ -42,7 +46,7 @@ ssh bandit0@bandit.labs.overthewire.org -p 2220
 # Password: bandit0
 ```
 
-**Theory**:
+**Commands You'll Need**:
 - `ls` - Lists files in the current directory
 - `cat` - Displays file contents
 - `pwd` - Shows current directory path
@@ -73,7 +77,9 @@ NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL
 
 ## Level 1 → Level 2
 
-**Goal**: The password is stored in a file called `-` in the home directory.
+> **Level Goal**: The password for the next level is stored in a file called `-` located in the home directory.
+
+**Recommended Commands**: `ls`, `cd`, `cat`, `file`, `du`, `find`
 
 **Login**:
 ```bash
@@ -119,7 +125,9 @@ bandit1@bandit:~$ cat < -
 
 ## Level 2 → Level 3
 
-**Goal**: The password is stored in a file called `spaces in this filename`.
+> **Level Goal**: The password for the next level is stored in a file called `spaces in this filename` located in the home directory.
+
+**Recommended Commands**: `ls`, `cd`, `cat`, `file`, `du`, `find`
 
 **Login**:
 ```bash
@@ -161,7 +169,9 @@ bandit2@bandit:~$ cat spaces<tab>
 
 ## Level 3 → Level 4
 
-**Goal**: The password is stored in a hidden file in the `inhere` directory.
+> **Level Goal**: The password for the next level is stored in a hidden file in the `inhere` directory.
+
+**Recommended Commands**: `ls`, `cd`, `cat`, `file`, `du`, `find`
 
 **Login**:
 ```bash
@@ -207,7 +217,9 @@ bandit3@bandit:~/inhere$ cat .hidden
 
 ## Level 4 → Level 5
 
-**Goal**: The password is stored in the only human-readable file in the `inhere` directory.
+> **Level Goal**: The password for the next level is stored in the only human-readable file in the `inhere` directory.
+
+**Recommended Commands**: `ls`, `cd`, `cat`, `file`, `du`, `find`
 
 **Login**:
 ```bash
@@ -255,7 +267,9 @@ lrIWWI6bB37kxfiCQZqUdOIYfr6eEeqR
 
 ## Level 5 → Level 6
 
-**Goal**: Find a file that is human-readable, 1033 bytes in size, and not executable.
+> **Level Goal**: The password for the next level is stored in a file somewhere under the `inhere` directory and has all of the following properties: human-readable, 1033 bytes in size, and not executable.
+
+**Recommended Commands**: `ls`, `cd`, `cat`, `file`, `du`, `find`
 
 **Login**:
 ```bash
@@ -299,7 +313,9 @@ P4L4vucdmLnm8I7Vl7jG1ApGSfjYKqJU
 
 ## Level 6 → Level 7
 
-**Goal**: Find a file somewhere on the server with specific properties: owned by user bandit7, owned by group bandit6, and 33 bytes in size.
+> **Level Goal**: The password for the next level is stored somewhere on the server and has all of the following properties: owned by user bandit7, owned by group bandit6, and 33 bytes in size.
+
+**Recommended Commands**: `ls`, `cd`, `cat`, `file`, `du`, `find`, `grep`
 
 **Login**:
 ```bash
@@ -336,7 +352,9 @@ z7WtoNQU2XfjmMtWA8u5rN4vzqu4v99S
 
 ## Level 7 → Level 8
 
-**Goal**: The password is stored in the file `data.txt` next to the word "millionth".
+> **Level Goal**: The password for the next level is stored in the file `data.txt` next to the word "millionth".
+
+**Recommended Commands**: `man`, `grep`, `sort`, `uniq`, `strings`, `base64`, `tr`, `tar`, `gzip`, `bzip2`, `xxd`
 
 **Login**:
 ```bash
@@ -368,7 +386,9 @@ The password is the second column after "millionth".
 
 ## Level 8 → Level 9
 
-**Goal**: The password is the only line of text that occurs only once in `data.txt`.
+> **Level Goal**: The password for the next level is stored in the file `data.txt` and is the only line of text that occurs only once.
+
+**Recommended Commands**: `grep`, `sort`, `uniq`, `strings`, `base64`, `tr`, `tar`, `gzip`, `bzip2`, `xxd`
 
 **Login**:
 ```bash
@@ -397,7 +417,9 @@ Why we need `sort` first: `uniq` only compares adjacent lines, so we must sort t
 
 ## Level 9 → Level 10
 
-**Goal**: The password is in one of the few human-readable strings in `data.txt`, preceded by several `=` characters.
+> **Level Goal**: The password for the next level is stored in the file `data.txt` in one of the few human-readable strings, preceded by several '=' characters.
+
+**Recommended Commands**: `grep`, `sort`, `uniq`, `strings`, `base64`, `tr`, `tar`, `gzip`, `bzip2`, `xxd`
 
 **Login**:
 ```bash
@@ -426,7 +448,9 @@ The password is in the last line.
 
 ## Level 10 → Level 11
 
-**Goal**: The password in `data.txt` has been encoded with base64.
+> **Level Goal**: The password for the next level is stored in the file `data.txt`, which contains base64 encoded data.
+
+**Recommended Commands**: `grep`, `sort`, `uniq`, `strings`, `base64`, `tr`, `tar`, `gzip`, `bzip2`, `xxd`
 
 **Login**:
 ```bash
@@ -458,7 +482,9 @@ The `-d` flag means "decode".
 
 ## Level 11 → Level 12
 
-**Goal**: The password has been encoded with ROT13 cipher.
+> **Level Goal**: The password for the next level is stored in the file `data.txt`, where all lowercase (a-z) and uppercase (A-Z) letters have been rotated by 13 positions (ROT13).
+
+**Recommended Commands**: `grep`, `sort`, `uniq`, `strings`, `base64`, `tr`, `tar`, `gzip`, `bzip2`, `xxd`
 
 **Login**:
 ```bash
@@ -493,7 +519,9 @@ Command breakdown:
 
 ## Level 12 → Level 13
 
-**Goal**: The password is in `data.txt`, which is a hexdump of a file that has been repeatedly compressed.
+> **Level Goal**: The password for the next level is stored in the file `data.txt`, which is a hexdump of a file that has been repeatedly compressed.
+
+**Recommended Commands**: `grep`, `sort`, `uniq`, `strings`, `base64`, `tr`, `tar`, `gzip`, `bzip2`, `xxd`, `mkdir`, `cp`, `mv`, `file`
 
 **Login**:
 ```bash
@@ -621,7 +649,9 @@ The password is wbWdlBxEir4CaE8LaPhauuOo6pwRmrDw
 
 ## Level 13 → Level 14
 
-**Goal**: The password is in `/etc/bandit_pass/bandit14` but you can't read it as bandit13. Instead, you get an SSH private key to log in as bandit14.
+> **Level Goal**: The password for the next level is stored in `/etc/bandit_pass/bandit14` and can only be read by user bandit14. For this level, you don't get the next password, but you get a private SSH key that can be used to log into the next level.
+
+**Recommended Commands**: `ssh`, `telnet`, `nc`, `openssl`, `s_client`, `nmap`
 
 **Login**:
 ```bash
@@ -660,7 +690,9 @@ fGrHPx402xGC7U7rXKDaxiWFTOiF0ENq
 
 ## Level 14 → Level 15
 
-**Goal**: Submit the current level's password to port 30000 on localhost to get the next password.
+> **Level Goal**: The password for the next level can be retrieved by submitting the password of the current level to port 30000 on localhost.
+
+**Recommended Commands**: `ssh`, `telnet`, `nc`, `openssl`, `s_client`, `nmap`
 
 **Login**:
 ```bash
@@ -693,7 +725,9 @@ jN2kgmIXJ6fShzhT2avhotn4Zcka6tnt
 
 ## Level 15 → Level 16
 
-**Goal**: Submit the password to port 30001 using SSL/TLS encryption.
+> **Level Goal**: The password for the next level can be retrieved by submitting the password of the current level to port 30001 on localhost using SSL/TLS encryption.
+
+**Recommended Commands**: `ssh`, `telnet`, `nc`, `openssl`, `s_client`, `nmap`
 
 **Login**:
 ```bash
@@ -725,7 +759,9 @@ The `-quiet` flag suppresses certificate information. You can ignore the "self s
 
 ## Level 16 → Level 17
 
-**Goal**: Find which port between 31000-32000 speaks SSL and will give you credentials (not just echo back).
+> **Level Goal**: The credentials for the next level can be retrieved by submitting the password of the current level to a port on localhost in the range 31000 to 32000. First find out which of these ports have a server listening on them. Then find out which of those speak SSL and which don't. There is only 1 server that will give you the next credentials, the others will simply send back what you send to it.
+
+**Recommended Commands**: `ssh`, `telnet`, `nc`, `openssl`, `s_client`, `nmap`
 
 **Login**:
 ```bash
@@ -818,7 +854,9 @@ You're now logged in as bandit17!
 
 ## Level 17 → Level 18
 
-**Goal**: There are 2 files: `passwords.old` and `passwords.new`. The password is the only line that changed.
+> **Level Goal**: There are 2 files in the homedirectory: `passwords.old` and `passwords.new`. The password for the next level is in `passwords.new` and is the only line that has been changed between `passwords.old` and `passwords.new`.
+
+**Recommended Commands**: `cat`, `grep`, `ls`, `diff`
 
 **Login**:
 ```bash
@@ -880,6 +918,3 @@ You've completed levels 0-17! Continue to [Bandit CTF: Levels 18-33](/posts/Band
 | `nmap` | Port scanning |
 | `diff` | Compare files |
 
----
-
-**Support SecureYourGear**: Explore more [CTF writeups](https://www.secureyourgear.com/categories/ctf/) and [security tutorials](https://www.secureyourgear.com/categories/).
