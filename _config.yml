@@ -64,7 +64,7 @@ google_analytics:
 # e.g. 'https://cdn.com'
 img_cdn:
 # the avatar on sidebar, support local or CORS resources
-avatar: https://avatars.githubusercontent.com/u/59029171
+avatar: /assets/img/oscpdragon.png
 # boolean type, the global switch for ToC in posts.
 toc: true
 comments:

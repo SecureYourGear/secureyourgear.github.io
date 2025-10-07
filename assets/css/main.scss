@@ -12,14 +12,15 @@
 :root {
   /* Pure Black Primary Colors */
   --cursor-bg: #000000;           /* Main Background - Pure Black */
+  --cursor-sidebar: #0d0d0d;      /* Sidebar - Slightly lighter black */
   --cursor-card: #111111;         /* Card/Content Areas - Very dark gray for minimal contrast */
   --cursor-border: #222222;       /* Borders - Dark gray borders */
-  
+
   /* High Contrast Text Colors */
   --cursor-text-primary: #ffffff; /* Primary Text - Pure white for maximum contrast */
   --cursor-text-secondary: #cccccc; /* Secondary Text - Light gray */
   --cursor-text-tertiary: #888888; /* Tertiary Text - Medium gray */
-  
+
   /* Bright Interactive Elements */
   --cursor-link: #00aaff;         /* Links - Bright blue for visibility */
   --cursor-link-hover: #33bbff;   /* Links (Hover) - Lighter bright blue */
@@ -77,7 +78,7 @@ html,
 
 /* Sidebar styling - ensure visibility and proper background */
 #sidebar {
-  background-color: var(--cursor-bg) !important;
+  background-color: var(--cursor-sidebar) !important;
   display: block !important;
   visibility: visible !important;
 }

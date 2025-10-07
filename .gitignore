@@ -5,6 +5,9 @@
 !.nojekyll
 !.travis.yml
 
+# local documentation
+CLAUDE.md
+
 # bundler cache
 _site
 vendor
