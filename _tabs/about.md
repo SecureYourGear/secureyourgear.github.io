@@ -4,6 +4,8 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-# About
+![About](/assets/img/about_photo.jpg)
 
-Coming soon...
+**Connect:**
+- [LinkedIn](https://www.linkedin.com/in/samiranastasio/)
+- [GitHub](https://github.com/SecureYourGear)

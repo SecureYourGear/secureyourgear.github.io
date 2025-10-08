@@ -15,7 +15,7 @@ timezone: America/New_York
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 title: SecureYourGear                          # the main title
-tagline: Samir Anastasio  # it will display as the sub-title
+tagline: Incident Response Lifecycle  # it will display as the sub-title
 description: >-                        # used by seo meta and the atom feed
   Samir Anastasio
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
@@ -64,7 +64,7 @@ google_analytics:
 # e.g. 'https://cdn.com'
 img_cdn:
 # the avatar on sidebar, support local or CORS resources
-avatar: /assets/img/oscpdragon.png
+avatar: /assets/img/profile_avatar.jpg
 # boolean type, the global switch for ToC in posts.
 toc: true
 comments:

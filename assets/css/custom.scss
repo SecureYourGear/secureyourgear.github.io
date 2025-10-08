@@ -3,6 +3,47 @@
 
 /* Custom color overrides - loaded after theme CSS */
 
+/* Avatar (profile photo) - Increase size with black background */
+#avatar > a {
+  width: 8rem !important;
+  height: 8rem !important;
+  background-color: #000000 !important;
+}
+
+/* About page - Photo and text side by side */
+#about .content > p:first-of-type {
+  display: flex !important;
+  align-items: center !important;
+  gap: 2rem !important;
+  flex-direction: row-reverse !important;
+}
+
+img[alt="About"],
+a.img-link img[alt="About"] {
+  max-width: 19rem !important;
+  width: 19rem !important;
+  height: auto !important;
+  flex-shrink: 0 !important;
+}
+
+a.img-link[href*="about_photo"] {
+  display: inline-block !important;
+  max-width: 19rem !important;
+  flex-shrink: 0 !important;
+}
+
+/* Typing animation cursor */
+.typing-cursor {
+  color: #00aaff !important;
+  animation: blink 1s step-end infinite;
+  margin-left: 2px;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
 /* Site title (SecureYourGear) - Purple */
 .site-title a {
   color: #9333ea !important;
@@ -12,9 +53,9 @@
   color: #a855f7 !important;
 }
 
-/* Site subtitle (Samir Anastasio) - 10% larger */
+/* Site subtitle - Larger size */
 .site-subtitle {
-  font-size: 1.0725rem !important;
+  font-size: 1.1rem !important;
   font-style: normal !important;
   font-weight: 500 !important;
 }
