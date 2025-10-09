@@ -3,11 +3,16 @@
 
 /* Custom color overrides - loaded after theme CSS */
 
-/* Avatar (profile photo) - Increase size with black background */
+/* Avatar (profile photo) - Increase size with black background and center */
+#avatar {
+  text-align: center !important;
+}
+
 #avatar > a {
   width: 8rem !important;
   height: 8rem !important;
   background-color: #000000 !important;
+  margin: 0 auto !important;
 }
 
 /* About page - Photo and text side by side */
@@ -44,7 +49,11 @@ a.img-link[href*="about_photo"] {
   51%, 100% { opacity: 0; }
 }
 
-/* Site title (SecureYourGear) - Purple */
+/* Site title (SecureYourGear) - Purple and centered */
+.site-title {
+  text-align: center !important;
+}
+
 .site-title a {
   color: #9333ea !important;
 }
@@ -53,11 +62,12 @@ a.img-link[href*="about_photo"] {
   color: #a855f7 !important;
 }
 
-/* Site subtitle - Larger size */
+/* Site subtitle - Larger size and centered */
 .site-subtitle {
   font-size: 1.1rem !important;
   font-style: normal !important;
   font-weight: 500 !important;
+  text-align: center !important;
 }
 
 /* Post titles - Blue */
